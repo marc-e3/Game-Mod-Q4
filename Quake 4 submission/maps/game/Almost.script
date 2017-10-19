@@ -1,0 +1,23 @@
+void AHspawn(){
+	
+	entity newAmmo;
+	entity newHealth;
+	entity newAmmo1;
+	entity newHealth1;
+	newAmmo = sys.spawn("ammo_currentweapon");
+	newHealth = sys.spawn("item_health_large");
+	newAmmo1 = sys.spawn("ammo_currentweapon");
+	newHealth1 = sys.spawn("item_health_large");
+	newAmmo.setWorldOrigin($target_null_5.getWorldOrigin());
+	newHealth.setWorldOrigin($target_null_6.getWorldOrigin());
+	newAmmo1.setWorldOrigin($target_null_41.getWorldOrigin());
+	newHealth1.setWorldOrigin($target_null_42.getWorldOrigin());
+
+}
+
+void spawnGun(){
+
+	entity newGun;
+	newGun = sys.spawn("weapon_rocketlauncher");
+	newGun.setWorldOrigin($target_null_8.getWorldOrigin());
+}
